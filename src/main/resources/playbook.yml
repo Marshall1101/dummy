@@ -1,0 +1,30 @@
+
+- hosts: localhost
+  tasks:
+    - name: Prepare random postfix
+      set_fact:
+        rpfx: "{{ 10000 | random }}"
+      run_once: yes
+
+- hosts: localhost
+  collections:
+    - azure.azcollection
+  vars:
+    kv_rg: kv_rg_{{ rpfx }}
+    kv_rg_loc: eastus
+    kv: "kv{{ rpfx }}"
+    kv_uri: "https://{{ kv }}.vault.azure.net"
+    kv_secret_name: testsecret
+    kv_secret_value: MySecret007$
+
+  tasks:
+    - name: Set facts
+      set_fact:
+        az_sub_id: "{{ lookup('env', 'AZ_SUBSCRIPTION_ID') }}"
+
+    - name: Create a resource group to hold the Key Vault instance
+      azure_rm_resourcegroup:
+        subscription_id: "{{ az_sub_id }}"
+        name: "{{ kv_rg }}"
+        location: "{{ kv_rg_loc }}"
+
