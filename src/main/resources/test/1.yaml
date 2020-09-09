@@ -15,3 +15,17 @@ languages:
   passworD.user2: "Test3"
   passworD.ignore: "{{ignore}}"
   passworD.ignore2: {{ignore2}}
+
+  adminpassword:    allow123..assd
+  administratorpassword:    allow123..assd
+  123password :    allow123..assd
+  acbpassword :    allow123..assd
+  administratarpassword :    allow123..assd
+  a.password :    allow123..assd
+  a_password :    allow123..assd
+  a-password :    allow123..assd
+
+  actions: read, modify, create, delete
+  a.password.aaa.b:    allow
+
+  d :    allow123..assd
