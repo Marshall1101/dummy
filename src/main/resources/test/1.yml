@@ -1,0 +1,11 @@
+name: Martin D'vloper
+job: Developer
+employed: True
+foods:
+  - Apple
+  - Mango
+languages:
+  password: 'test1'
+  passworD.user: Test2
+  passworD.user2: "Test3"
+  passworD.ignore: "{{ignore}}"
