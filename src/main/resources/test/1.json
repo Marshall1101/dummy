@@ -2,6 +2,7 @@
     "glossary": {
         "title": "example glossary",
         "passworD": "test1",
+        "aaa.passworD": "ignore",
         "password.user": "test2",
         "passworD.ignore": "{{ignore}}",
         "GlossEntry": {
