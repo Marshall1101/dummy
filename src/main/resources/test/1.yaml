@@ -24,6 +24,8 @@ languages:
   a.password :    allow123..assd
   a_password :    allow123..assd
   a-password :    allow123..assd
+  administrator_password:    allow123..assd
+  admin.password:    allow123..assd
 
   actions: read, modify, create, delete
   a.password.aaa.b:    allow
