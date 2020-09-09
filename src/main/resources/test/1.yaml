@@ -9,3 +9,4 @@ languages:
   passworD.user: Test2
   passworD.user2: "Test3"
   passworD.ignore: "{{ignore}}"
+  passworD.ignore2: {{ignore2}}
