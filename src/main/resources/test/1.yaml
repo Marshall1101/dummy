@@ -10,6 +10,7 @@ languages:
   bbb.password: "ignore"
   ccc.password: ignore
   ddd.password: {{ignore2}}
+  aaa_password: "test1"
   passworD.user: Test2
   passworD.user2: "Test3"
   passworD.ignore: "{{ignore}}"

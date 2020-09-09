@@ -2,6 +2,8 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
           jcr:primaryType="sling:OsgiConfig"
           passworD = "test1"
+          aaa.passworD = "test1"
+          aaa_password = "test1"
           password.user = "test2"
           passworD.ignore = "{{abc}}"
 
