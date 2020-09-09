@@ -6,6 +6,10 @@ foods:
   - Mango
 languages:
   password: 'test1'
+  aaa.password: 'ignore'
+  bbb.password: "ignore"
+  ccc.password: ignore
+  ddd.password: {{ignore2}}
   passworD.user: Test2
   passworD.user2: "Test3"
   passworD.ignore: "{{ignore}}"
